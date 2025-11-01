@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Tools - Your Ultimate Online Toolkit</title>
+    <meta name="description" content="Over 130 free and easy-to-use online tools for audio, video, images, documents, development, and more. All in one place.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">ToolVerse</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="hamburger-menu" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The Ultimate All-in-One Toolkit</h1>
+                <p>Discover 130+ free tools to boost your productivity. Convert, create, and calculate anything, right in your browser.</p>
+                <div class="search-bar-container">
+                    <input type="search" id="home-search" placeholder="Search for a tool (e.g., Image Compressor, QR Code Generator)...">
+                    <button onclick="location.href='tools.html'">View All Tools</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Header Banner Ad -->
+        <div class="ad-container ad-header-banner" role="complementary" aria-label="Advertisement">
+            <div class="ad-placeholder" style="width: 728px; height: 90px;"></div>
+        </div>
+
+        <section class="featured-tools">
+            <h2>Featured Tools</h2>
+            <div class="tool-grid" id="featured-tools-grid">
+                <!-- Popular tools will be dynamically inserted here by app.js -->
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <!-- Footer content will be injected by app.js -->
+    </footer>
+</body>
+</html>
