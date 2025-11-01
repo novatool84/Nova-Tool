@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (same head as index.html) ... -->
+    <title>Image Compressor - Compress JPG, PNG, WebP</title>
+</head>
+<body>
+    <header>
+        <!-- ... (same header as index.html) ... -->
+    </header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; <a href="tools.html">Image Tools</a> &gt; <span>Image Compressor</span>
+        </nav>
+
+        <section class="tool-page-container">
+            <div class="tool-header">
+                <h1>Image Compressor</h1>
+                <p>Reduce the file size of your images without losing quality.</p>
+            </div>
+
+            <!-- Top Banner Ad -->
+            <div class="ad-container ad-tool-top-banner" role="complementary" aria-label="Advertisement">
+                <div class="ad-placeholder" style="width: 728px; height: 90px;"></div>
+            </div>
+            
+            <div class="tool-content-area">
+                <!-- Left Panel: Tool UI -->
+                <div class="tool-panel">
+                    <div id="image-drop-zone" class="drop-zone">
+                        <p>Drag & Drop your image here or</p>
+                        <input type="file" id="image-upload" accept="image/jpeg, image/png, image/webp" hidden>
+                        <button onclick="document.getElementById('image-upload').click()">Select Image</button>
+                    </div>
+                    <div class="tool-settings">
+                        <label for="quality-slider">Quality:</label>
+                        <input type="range" id="quality-slider" min="10" max="100" value="80">
+                        <span id="quality-value">80%</span>
+                    </div>
+                </div>
+                
+                <!-- Middle Banner Ad -->
+                <div class="ad-container ad-tool-middle-banner" role="complementary" aria-label="Advertisement">
+                     <div class="ad-placeholder" style="width: 300px; height: 250px;"></div>
+                </div>
+
+                <!-- Right Panel: Output/Preview -->
+                <div class="output-panel">
+                    <h3>Preview</h3>
+                    <div id="image-preview-container">
+                        <p>Your compressed image will appear here.</p>
+                    </div>
+                    <button id="download-btn" disabled>Download Compressed Image</button>
+                </div>
+            </div>
+
+            <!-- Bottom Banner Ad -->
+            <div class="ad-container ad-tool-bottom-banner" role="complementary" aria-label="Advertisement">
+                 <div class="ad-placeholder" style="width: 336px; height: 280px;"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <!-- Footer content will be injected by app.js -->
+    </footer>
+
+    <!-- Floating Mobile Sticky Ad -->
+    <div class="ad-container ad-mobile-sticky" role="complementary" aria-label="Advertisement">
+        <div class="ad-placeholder" style="width: 320px; height: 50px;"></div>
+    </div>
+    
+    <script src="tools/image-tools.js"></script>
+</body>
+</html>
